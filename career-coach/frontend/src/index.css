@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    background-color: #0A0A0F;
+    color: #E5E7EB;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Syne', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(110,231,183,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(110,231,183,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 24px rgba(110,231,183,0.15);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 30px rgba(110,231,183,0.4);
+  }
+
+  .card-base {
+    background: #12121A;
+    border: 1px solid #1E1E2E;
+    border-radius: 12px;
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      #12121A 25%,
+      #1C1C28 50%,
+      #12121A 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.8s linear infinite;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0A0A0F; }
+::-webkit-scrollbar-thumb { background: #1E1E2E; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #6EE7B7; }
+
+/* Progress bar */
+.progress-bar {
+  height: 4px;
+  background: #1E1E2E;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6EE7B7, #34D399);
+  border-radius: 2px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
