@@ -5,6 +5,8 @@ from pathlib import Path
 from groq import Groq
 from dotenv import load_dotenv
 
+API_KEY = os.getenv("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")
+
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
