@@ -6,15 +6,17 @@
   * { box-sizing: border-box; }
 
   body {
-    background-color: #0A0A0F;
-    color: #E5E7EB;
-    font-family: 'DM Sans', sans-serif;
+    background-color: #F5F1EA;
+    color: #1F2937;
+    font-family: 'Manrope', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     margin: 0;
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.03em;
   }
 
   html {
@@ -30,54 +32,95 @@
 @layer utilities {
   .bg-grid {
     background-image:
-      linear-gradient(rgba(110,231,183,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(110,231,183,0.04) 1px, transparent 1px);
-    background-size: 40px 40px;
+      linear-gradient(rgba(111,143,175,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(111,143,175,0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
   }
 
   .glow-accent {
-    box-shadow: 0 0 24px rgba(110,231,183,0.15);
+    box-shadow: 0 18px 50px rgba(111,143,175,0.10);
   }
 
   .glow-text {
-    text-shadow: 0 0 30px rgba(110,231,183,0.4);
+    text-shadow: 0 8px 24px rgba(111,143,175,0.08);
   }
 
   .card-base {
-    background: #12121A;
-    border: 1px solid #1E1E2E;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid #D8DEE8;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
   }
 
   .shimmer-bg {
     background: linear-gradient(
       90deg,
-      #12121A 25%,
-      #1C1C28 50%,
-      #12121A 75%
+      #F7F9FB 25%,
+      #EDF2F7 50%,
+      #F7F9FB 75%
     );
     background-size: 200% 100%;
     animation: shimmer 1.8s linear infinite;
+  }
+
+  .bg-ink {
+    background-color: #F5F1EA !important;
+    color: #1F2937;
+  }
+
+  .bg-surface {
+    background-color: #EEF2F6 !important;
+  }
+
+  .text-white {
+    color: #1F2937 !important;
+  }
+
+  .text-muted {
+    color: #6B7280 !important;
+  }
+
+  .text-accent {
+    color: #6F8FAF !important;
+  }
+
+  .border-border {
+    border-color: #D8DEE8 !important;
+  }
+
+  .bg-white\/5 {
+    background-color: rgba(255, 255, 255, 0.78) !important;
+  }
+
+  .bg-white\/8 {
+    background-color: rgba(255, 255, 255, 0.84) !important;
+  }
+
+  .bg-ink\/50,
+  .bg-ink\/60,
+  .bg-ink\/70,
+  .bg-ink\/90 {
+    background-color: rgba(245, 241, 234, 0.88) !important;
   }
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #0A0A0F; }
-::-webkit-scrollbar-thumb { background: #1E1E2E; border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: #6EE7B7; }
+::-webkit-scrollbar-track { background: #F5F1EA; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #6F8FAF; }
 
 /* Progress bar */
 .progress-bar {
   height: 4px;
-  background: #1E1E2E;
+  background: #D8DEE8;
   border-radius: 2px;
   overflow: hidden;
 }
 
 .progress-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #6EE7B7, #34D399);
+  background: linear-gradient(90deg, #8AA4BF, #6F8FAF);
   border-radius: 2px;
   transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }

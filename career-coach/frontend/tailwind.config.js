@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Syne"', 'sans-serif'],
-        body: ['"DM Sans"', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'sans-serif'],
+        body: ['"Manrope"', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       colors: {
-        ink: '#0A0A0F',
-        card: '#12121A',
-        border: '#1E1E2E',
-        accent: '#6EE7B7',
-        warn: '#FCD34D',
-        danger: '#F87171',
-        muted: '#4B5563',
-        surface: '#1C1C28',
+        ink: '#F5F1EA',
+        card: '#FFFFFF',
+        border: '#D8DEE8',
+        accent: '#6F8FAF',
+        warn: '#C49A58',
+        danger: '#C77777',
+        muted: '#6B7280',
+        surface: '#EEF2F6',
       },
       animation: {
         'fade-up': 'fadeUp 0.5s ease forwards',

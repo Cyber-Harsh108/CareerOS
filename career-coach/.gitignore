@@ -1,0 +1,7 @@
+.env
+backend/career_coach.db
+backend/career_coach.db-shm
+backend/career_coach.db-wal
+frontend/node_modules
+frontend/dist
+backend/__pycache__
